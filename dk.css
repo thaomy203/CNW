@@ -1,0 +1,211 @@
+body 
+{
+    background-image: url("https://i.pinimg.com/originals/c4/13/59/c413599bc57f7596d75bea1775b14169.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    animation: fadeInBackground 2s ease-in-out;
+}
+
+@keyframes fadeInBackground 
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+.dangky 
+{
+    background-color: rgba(255, 216, 235, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 350px; 
+    text-align: center; 
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dangky h1 
+{
+    color: #000000; 
+    animation: fadeInText 1.5s ease-in;
+}
+
+@keyframes fadeInText 
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+.dangky label 
+{
+    display: block; 
+    margin-top: 10px;
+    color: #555;
+    font-size: 17px;
+    animation: fadeInText 1.5s ease-in;
+}
+
+.dangky input[type="text"], 
+.dangky input[type="password"], 
+.dangky select 
+{
+    width: 100%; 
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: all 0.3s ease;
+    animation: fadeInInput 1.2s ease-in-out;
+}
+
+@keyframes fadeInInput 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dangky input[type="text"]:hover,
+.dangky input[type="password"]:hover,
+.dangky select:hover 
+{
+    border-color: #f02e7f;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 10px rgba(240, 46, 127, 0.2);
+}
+
+.dangky input[type="text"]:focus,
+.dangky input[type="password"]:focus,
+.dangky select:focus 
+{
+    outline: none; 
+    border-color: #f11ea7; 
+    box-shadow: 0 0 10px rgba(165, 103, 212, 0.6);
+}
+
+.dangky input::placeholder 
+{
+    color: #aaa;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+.dangky input:focus::placeholder 
+{
+    color: transparent;
+}
+
+.dangky button
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #f02e7f; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: bounceIn 1.5s ease-out;
+}
+
+@keyframes bounceIn 
+{
+    from 
+    {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.dangky button:hover 
+{
+    background-color: #b30030;
+    transform: scale(1.05);
+}
+
+a 
+{
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    float: right;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    animation: fadeInLink 2s ease-in;
+}
+
+@keyframes fadeInLink 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a:hover 
+{
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+    text-decoration: none;
+}
